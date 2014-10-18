@@ -7,7 +7,7 @@ widgets:
 - category
 - tag
 
-excerpt_link: Read More
+excerpt_link: 阅读全文
 
 twitter:
   username:
@@ -15,7 +15,7 @@ twitter:
   tweet_count: 5
 
 addthis:
-  enable: true
+  enable: false
   pubid:
   facebook: true
   twitter: true
@@ -27,7 +27,7 @@ fancybox: true
 google_analytics:
 rss:
 
-comment_provider: facebook
+comment_provider: 
 # Facebook comment
 facebook:
   appid: 123456789012345
