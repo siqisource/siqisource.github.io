@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>思齐开源</title>
+  <title>精益界面原型的技术实现 | 思齐开源</title>
   <meta name="author" content="siqisoft.com">
   
   <meta name="description" content="opensource projects from siqisoft team">
@@ -11,7 +11,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  
+  <meta property="og:title" content="精益界面原型的技术实现"/>
   <meta property="og:site_name" content="思齐开源"/>
 
   
@@ -44,8 +44,7 @@
 </nav>
 <div class="clearfix"></div></header>
   <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper">
-  <article class="post">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
   
   <div class="post-content">
     <header>
@@ -55,7 +54,7 @@
       
       
   
-    <h1 class="title"><a href="/2014/10/20/精益界面原型的技术实现/">精益界面原型的技术实现</a></h1>
+    <h1 class="title">精益界面原型的技术实现</h1>
   
 
     </header>
@@ -135,75 +134,11 @@
     <footer>
       
         
-        
-      
-      <div class="clearfix"></div>
-    </footer>
+  
+  <div class="categories">
+    <a href="/categories/方法/">方法</a>
   </div>
-</article>
 
-
-
-
-  <article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-10-18T04:10:22.000Z"><a href="/2014/10/18/做精细的界面原型/">10月 18 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2014/10/18/做精细的界面原型/">做精细的界面原型</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>yulei</p>
-<h2 id="背景">背景</h2>
-<p>我们做软件开发工作，在编码前，往往需要做界面原型，供内部讨论或者用户确认。</p>
-<p>做界面原型的工具多种多样，有用铅笔在纸上画的，有用AxureRP在电脑中绘制的，还有直接写html形成界面原型的。  </p>
-<p>界面原型的仿真度越高，做出来花费的成本也就越大。在不同阶段，因为交流对象的不同，可以使用不同的工具。例如：  </p>
-<ul>
-<li><p>在系统需求分析阶段，几个分析师大牛坐在一起，关注的是<strong>有没有</strong>某项功能点，他们用铅笔和橡皮就可以达成共识；  </p>
-</li>
-<li><p>在设计阶段，优雅的设计师们，用AxureRP,把分析师们的草稿，用合理的布局，协调的配色展示出来；</p>
-</li>
-<li><p>在和用户确认的阶段，开发人员根据设计稿，精益求精地做出一些AxureRP做不到的跳转或者操作数据的效果，制作一些虚拟数据，发给用户操作一下，请用户看看这是不是最终想要的结果。  </p>
-</li>
-</ul>
-<p>以上是理想情况下，一个软件项目关于界面方面的开发流程。那么，问题来了，软件开发到底哪家强，谁有这么多的人力财力投入去做一个规范的项目？</p>
-<p>回到现实，小团队，一个人顶几个人用，扮演不同角色的情况下，怎么把界面原型工作做好？</p>
-<p>小团队当然没有设计师，省掉前面的第二点，我们把基本组件的设计工作外包给<code>twitter</code>的<code>bootstrap</code>项目组。至于基本组件怎么组成一个布局合理的页面，请我们的开发人员在做html界面原型的时候，多和画铅笔画的分析人员聊一聊，虽然两个人都没什么美感，但是好在<code>bootstrap</code>不管怎么组合，都不会太难看。</p>
-<h2 id="用html做界面原型，度在哪里">用html做界面原型，度在哪里</h2>
-<p>我所经历过的项目，做界面原型时，大部分是把原来开发过的系统跑起来，另存为html,然后删删改改，修修补补，勉勉强强做出一份界面原型，用IE一打开，一定在左下角显示js错的感叹号，不然都不好意思说这是一个界面原型！</p>
-<blockquote>
-<p>开发人员作出的界面原型，一般也不会经过测试人员测试，因为测试界面原型没有什么意义。它对界面原型本身是没什么意义，但是对测试人员来说，可以让他提前了解业务，提前思考测试的场景。随着后面一轮一轮的界面原型的变更和改进，测试人员对业务的理解也会越来越深入。我们之前是等程序开发出来了再转测试，一般开发会让进度耽误那么1-2周，这样测试就完全没时间熟悉业务，更别说能测出什么业务问题了。</p>
-<p>我觉得，软件开发从分析那一刻开始，测试人员就要参与进来（不是指派一名测试经理跟着参加各种会议打酱油）。当然，这又理想化了。</p>
-</blockquote>
-<p>那时我们认为软件工程理论中，说了要和用户确认界面原型，我们就一定要和用户确认。至于给用户拿去了什么界面原型，就不归软件过程管控部门的事情了，我们的行为只要看起来很正规就行。其实用户不知道什么是软件，也不知道什么是软件界面原型。你拿一个馒头给用户，告诉他，这就是软件界面原型，你签个字吧。他还有可能真的就在馒头上签字了。</p>
-<p>我以为软件的界面原型，要做精做细。软件维护在软件的生命周期中，是最耗时费力的。有能力的可以谈下维护费，没有能力的只能忍着无尽的变动，或者置之不理坏了名声。</p>
-<p>为什么软件在开发出来后，会有那么多的变动?责任其实不在于用户。用户经营的行业，可能已经持续了几十年甚至上百年，他们的业务领域，往往都是比较稳定的。用户的需求一直没变，变化的是，在用软件支撑他的业务时，我们和用户对业务领域的理解，不断发生着变化。把界面原型做细，就是要在前期，和用户进行多轮地沟通和推演，把后期发生的理解差异，尽量往前赶。这样，花费的代价最小，因为我们还没写业务代码呢！</p>
-<p>细到什么程度？界面原型和最后开发出来的界面，应该是一模一样的！这里的一模一样，不仅仅停留在用户能看到的地方：页面的布局，按钮的个数和功能，还体现在，html页面代码里面的<code>input</code>框的<code>name</code>属性，都要和最终软件运行时的<code>model</code>的<code>property</code>和数据库表的字段，都能对应上。很难吗？好像不难，数据库设计和界面设计都是前后脚的事情，对于谁先谁后无所谓。先做界面，等数据库设计的时候，复用界面上起好的名字；先做数据库设计的，做界面原型时，就能把数据库的名字写到html中。</p>
-<blockquote>
-<p>这里故意回避了谁该起名字的责任。如果先做界面，后做数据库，看起来好像要界面原型的开发人员起名字。实际可以要求分析人员先把表单的名字定下来，就是画铅笔草图的时候 ，画的再详细一点。小团队开发界面原型的必须不能是新手，要找有分析和设计功底的人来做界面开发，直接上手就把名字起好。</p>
-</blockquote>
-<h2 id="技术实现，html够不够">技术实现，html够不够</h2>
-<p>整篇文字慢慢渗透出这样一种观点：做界面原型，就开始开发了（连测试都参与进来了）。想想现在的开发过程，后端基本都用代码生成工具来生成，只要有数据库了，框架代码就出来了。最后需要精雕细琢的只有两块：业务逻辑代码，界面。</p>
-<p>凡事往前赶一赶，界面，不如在界面原型阶段就给它雕琢个七七八八。怎么雕琢？仿真，往死里仿真,html不够，还要请jsp来帮忙。纯的html，用浏览器打开本地文件的方式就可以操作，一些网页和服务器的反馈、交互，用静态的技术还是模仿不来。使用一个简单的jsp容器，把页面换成jsp,交互性就更强了。但是此时一定要把握一个度，不要写java代码，保持界面原型精细的同事，还要保持它的轻量级。</p>
-<p>下面以<code>SpringMVC</code>框架为例，谈一谈如何仿真。</p>
-<p>做界面原型之初，我们就得想象，后面的逻辑已经完成了。假设现在要做一个课程列表，里面包含新增、修改、删除功能。我们有<code>SubjectList.jsp</code>，<code>SubjectAdd.jsp</code>,<code>SubjectEdit.jsp</code>。<code>SubjectList.jsp</code>上有<code>新增</code>，<code>修改</code>，<code>删除</code>按钮。</p>
-<p>对于开发完的程序，我们在浏览器里面输入<code>/SubjectList.do</code>，SpringMVC找到对应的<code>Controller</code>的方法，执行它，从数据库取得数据，放在<code>model</code>对象里面，返回<code>SubjectList.jsp</code>页面，在页面上<code>&lt;c:forEach&gt;</code>把数据循环出来。</p>
-<p>现在我们还什么都没有呢，怎么办？没关系，我们新建一个<code>SubjectList.do.jsp</code>的文件，里面<code>new ArrayList();</code>，添加一些虚拟数据，最后再一行<code>&lt;jsp:forward page=&#39;SubjectList.jsp&#39;&gt;</code>。</p>
-<p>如果不是在页面上循环，而是使用<code>ajax</code>技术，在<code>SubjectList.jsp</code>页面上，异步请求<code>json</code>数据，怎么办？那么在<code>SubjectList.do.jsp</code>的文件里面，直接<code>&lt;jsp:forward page=&#39;SubjectList.jsp&#39; &gt;</code>。然后增加一个<code>SubjectList.json.jsp</code>，在里面放好<code>json</code>数据，等待<code>SubjectList.jsp</code>页面上的<code>javascript</code>组件召唤即可。<code>新增</code>，<code>修改</code>，<code>删除</code>按钮，也可以依法炮制。</p>
-<p>当然，在实际做界面原型的过程中，会遇到细节的问题，不是如上面描述的那么简单。比如：<code>ArrayList</code>里面装什么，<code>VO</code>吗？我们还没有<code>VO</code>呢！这些问题不在这批文章里面做深入研究，只提出精细做界面原型的一些思路，具体的困难和解决办法，还需要我们在实践中不断尝试。</p>
-
-      
-    </div>
-    <footer>
-      
         
         
       
@@ -213,47 +148,13 @@
 </article>
 
 
+<section id="comment">
+  <h1 class="title">留言</h1>
 
-
-  <article class="post">
   
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2014-10-17T15:59:22.000Z"><a href="/2014/10/17/hello-world/">10月 17 2014</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2014/10/17/hello-world/"></a></h1>
-  
+</section>
 
-    </header>
-    <div class="entry">
-      
-        <p>first page<br>this is siqisource’s blog.<br>它记录思齐团队的积累和感悟。</p>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-
-<nav id="pagination">
-  
-  
-  <div class="clearfix"></div>
-</nav></div></div>
+</div></div>
     <aside id="sidebar" class="alignright">
   <div class="search">
   <form action="//google.com/search" method="get" accept-charset="utf-8">
